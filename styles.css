@@ -6,6 +6,7 @@
 --warm-black: #282623;
 --black: #201e1c;
 --grey: #bababa;
+--dark-grey: #757575;
 --off-white: #faf8f7;
 --just-white: #fff;
 }
@@ -137,5 +138,116 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--dark-grey);
+}
+
+.main--currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.currency-table--title,
+.fees-table--title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 2.3rem;
+}
+
+.currency-table--title {
+    color: var(--bitcoin-orange);
+}
+.fees-table--title {
+    color: var(--secondary-blue);
+}
+
+.currency-table--container,
+.fees-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+}
+
+table td {
+    width: 50%;
+    color: var(--grey);
+    padding-left: 0;
+    background-color: var(--just-white);
+}
+
+table .table__right {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+    text-align: center;
+}
+
+.trending-down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    background-image:
+        url('./assets/icons/trending-down.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trending-up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    background-image:
+        url('./assets/icons/trending-up.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table__top-left {
+    border-radius: 8px 0 0 0;
+}
+.table__top-right {
+    border-radius: 0 8px 0 0;
+}
+.table__bottom-left {
+    border-radius: 0 0 0 8px;
+}
+.table__bottom-right {
+    border-radius: 0 0 8px 0;
+}
+
+.currency-table--date,
+.fees-table--date {
+    width: 65%;
+    height: 25px;
+    margin: 0 auto;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-top: 15px;
+    padding-top: 6px;
+}
+
+.currency-table--date {
+    background-color: var(--soft-orange);
+}
+
+.fees-table--date {
+    background-color: var(--soft-blue);
 }
