@@ -416,7 +416,7 @@ table .table__right {
 
 .plans-container--slider {
     display: flex;
-    gap: 60px;
+    gap: 5px;
     height: 276px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -507,4 +507,38 @@ table .table__right {
     height: 24px;
     background-image: url('./assets/icons/orange-right-arrow.svg');
     vertical-align: -7px;
+}
+
+footer {
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-self: end;
+}
+
+.footer-links-container a {
+    text-decoration: none;
+    color: var(--just-white);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer-logo-container img {
+    width: 64px;
+    height: 50px;
+    align-self: center;
 }
