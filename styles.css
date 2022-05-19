@@ -344,3 +344,142 @@ table .table__right {
     margin-bottom: 8px;
 }
 
+.trial-img-container {
+    width: 100;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.trial-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.plans-main-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--slider {
+    display: flex;
+    gap: 60px;
+    height: 276px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    background-color: var(--just-white);
+    width: 60%;
+    min-width: 192px;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 220px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 15px;
+}
+
+.recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 30px;
+    background-color: var(--bitcoin-orange);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--just-white);
+    padding-top: 9px;
+    border-radius: 8px;
+}
+
+.plan-info-container h3 {
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    padding-top: 32px;
+    color: var(--black);
+}
+
+.plan-card-price {
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.2rem;
+    color: var(--black);
+    margin-top: 12px;
+}
+
+.plan-info-container .custom-plan-price {
+    font-size: 4rem;
+}
+
+.plan-card-price span {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    line-height: 1.45rem;
+    vertical-align: 25px;
+}
+
+.plan-card-extra-info {
+    font-size: 1.2rem;
+    font-weight: 500px;
+    line-height: 1.45rem;
+    color: #757575;
+    padding: 4px 12px;
+}
+
+.plan-info-container button {
+    width: 80%;
+    padding: 8px 0;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--off-white);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+
+.plan-info-container button span {
+    margin-left: 8px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: -7px;
+}
