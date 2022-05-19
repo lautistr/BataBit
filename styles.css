@@ -413,6 +413,7 @@ table .table__right {
     height: 220px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 15px;
+    margin-top: 16px;
 }
 
 .recommended {
