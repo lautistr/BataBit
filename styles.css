@@ -141,13 +141,32 @@ main {
     color: var(--dark-grey);
 }
 
-.main--currency-table {
+.main-tables-container {
+    display: flex;
+    gap: 60px;
+    height: 280px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main--currency-table,
+.main--fees-table {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
-    height: 360px;
+    height: 260px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
+}
+
+.main-tables-container .main--currency-table {
+    margin-left: 40px;
+}
+
+.main-tables-container .main--fees-table {
+    margin-right: 40px;
 }
 
 .currency-table--title,
@@ -285,6 +304,7 @@ table .table__right {
     color: var(--just-white);
     text-align: center;
     font-size: 2rem;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 2rem;
@@ -293,6 +313,7 @@ table .table__right {
 .main-advantages--content-container p {
     color: #808080;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .main-advantages--content-container .advantages--chart p {
@@ -443,7 +464,7 @@ table .table__right {
     font-weight: bold;
     line-height: 6.2rem;
     color: var(--black);
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .plan-info-container .custom-plan-price {
@@ -466,6 +487,9 @@ table .table__right {
 }
 
 .plan-info-container button {
+    position: absolute;
+    left: calc(10%);
+    bottom: 16px;
     width: 80%;
     padding: 8px 0;
     border: 2px solid var(--bitcoin-orange);
