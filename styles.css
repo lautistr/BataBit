@@ -143,7 +143,7 @@ main {
 
 .main-tables-container {
     display: flex;
-    gap: 60px;
+    gap: 20vw;
     height: 280px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -162,11 +162,11 @@ main {
 }
 
 .main-tables-container .main--currency-table {
-    margin-left: 40px;
+    margin-left: 20vw;
 }
 
 .main-tables-container .main--fees-table {
-    margin-right: 40px;
+    margin-right: 20vw;
 }
 
 .currency-table--title,
@@ -321,7 +321,8 @@ table .table__right {
 }
 
 .charts-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 12px;
 }
@@ -331,9 +332,11 @@ table .table__right {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
     padding: 20px;
+    width: 90%;
     min-width: 304px;
     max-width: 400px;
     height: 120px;
+    margin: 0 auto 1.6rem;
 }
 
 .advantages--chart span {
@@ -369,7 +372,7 @@ table .table__right {
     width: 100;
     min-width: 320px;
     height: 60vh;
-    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-image: url('./assets/img/bitcoinbaby.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -541,4 +544,25 @@ footer {
     width: 64px;
     height: 50px;
     align-self: center;
+}
+
+@media (min-width: 600px) {
+    .main-tables-container {
+        gap: 0;
+    }    
+
+    .main-tables-container .main--currency-table {
+        margin-left: 0;
+    }
+    
+    .main-tables-container .main--fees-table {
+        margin-right: 0;
+    }
+
+    .trial-img-container {
+        background: url('../assets/img/bitcoinbaby2x.jpg') no-repeat center/cover;
+        background-attachment: fixed;
+    }
+
+
 }
